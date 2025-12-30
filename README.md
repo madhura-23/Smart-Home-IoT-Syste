@@ -11,3 +11,22 @@ Design a scalable and secure smart home system using ESP32 devices that allows u
 
 ## Scope
 This project focuses on system architecture and design. Device behavior is validated using virtual ESP32 simulation.
+
+## System Architecture
+
+The smart home system is designed using a layered architecture to ensure scalability, reliability, and ease of maintenance.
+
+### Device Layer
+ESP32 devices are responsible for controlling appliances and reporting their current state. Devices connect to the network over Wi-Fi and communicate with the backend using lightweight protocols.
+
+### Communication Layer
+This layer handles data exchange between devices and the backend. Protocols such as HTTP or MQTT are used to ensure reliable and low-latency communication.
+
+### Backend Layer
+The backend acts as the central controller of the system. It manages device registration, routes control commands, maintains device states, and logs all activities.
+
+### Database Layer
+The database stores device metadata, current status, activity logs, and user information. A NoSQL database is preferred for flexible schema design and scalability.
+
+### Dashboard Layer
+The web dashboard provides a user-friendly interface to monitor device states, control appliances, and view historical activity logs in real time.
