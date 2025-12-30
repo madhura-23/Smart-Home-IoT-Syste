@@ -30,3 +30,10 @@ The database stores device metadata, current status, activity logs, and user inf
 
 ### Dashboard Layer
 The web dashboard provides a user-friendly interface to monitor device states, control appliances, and view historical activity logs in real time.
+
+## Design Decisions
+
+- A layered architecture was chosen to separate concerns and improve maintainability.
+- ESP32 devices are kept lightweight to handle hardware constraints.
+- Backend services are designed to be stateless for horizontal scalability.
+- Simulation is used to validate system behavior before physical deployment.
